@@ -1,6 +1,5 @@
 "use client";
 
-import React, { CSSProperties } from 'react';
 import { useState, useEffect } from "react";
 import { FaCopy, FaBars } from "react-icons/fa";
 import QRCode from "qrcode.react";
