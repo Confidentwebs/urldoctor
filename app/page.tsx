@@ -11,13 +11,13 @@ import { getAnalytics, logEvent, Analytics, isSupported } from "firebase/analyti
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDYyK2hE1OtMwpKnycaYMrQFcQ-GMSabvI",
-  authDomain: "urldoc.firebaseapp.com",
-  projectId: "urldoc",
-  storageBucket: "urldoc.appspot.com",
-  messagingSenderId: "1067418314404",
-  appId: "1:1067418314404:web:8e19aad69c24f2bc72a831",
-  measurementId: "G-HB6KNZ9MCT"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
